@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="index1.css">
+    <style>
+        body {
+            background: url('cover.jpg');
+            background-repeat: no-repeat;
+            background-position: top center;
+            width: auto;
+            height: 800px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header ">
+        <nav>
+            <div class="logo">
+                <img src="Logo.png" alt="Loading logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="AboutUs.html">AboutUs</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="AboutUs.html">Contat Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Registration Form -->
+        <h2>Registration Form</h2>
+        <div class="register">
+            <h3>Register</h3>
+            <form method="POST" id="register" action="">
+                <!-- first Name -->
+                <label for="">Name :</label><br>
+                <input type="text" placeholder="Full Name" name="myName" id="name"><br><br>
+
+                <!-- Date of Birth -->
+                <label for="DOB"> Date Of Birth: </label>
+                <input type="date" placeholder="DOB" name="myDate" id="dob"><br><br>
+
+                <!-- Gender -->
+                Gender:&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="MyGender" id="male">
+                <span id="male">&nbsp; Male</span> &nbsp;&nbsp;
+                <input type="radio" name="MyGender" id="female">
+                <span id="male">&nbsp; Female</span> &nbsp;&nbsp;
+                <input type="radio" name="MyGender" id="other">
+                <span id="male">&nbsp; Other</span> &nbsp;&nbsp;<br><br>
+
+                <!-- Mobile Number -->
+                <label for="">Mobile Number :</label><br>
+                <select id="ph">
+                    <option class="opt">Select</option>
+                    <option class="opt">+91</option>
+                    <option class="opt">+92</option>
+                    <option class="opt">+93</option>
+                    <option class="opt">+94</option>
+                    <option class="opt">+95</option>
+                </select>&nbsp;
+                <input type="number" placeholder="Mobile No." name="Mobile" id="number"><br><br>
+
+                <!-- Email -->
+                <label for="">Email :</label><br>
+                <input type="email" placeholder="Email" name="myEmail" id="name"><br><br>
+
+                <!-- Password -->
+                <label for="">Password :</label><br>
+                <input type="password" placeholder="password" name="myPassword" id="name"><br><br>
+
+                <!--  Conform Password -->
+                <label for="">Conform Password :</label><br>
+                <input type="password" placeholder="Conform Password" name="myPassword" id="name"><br><br>
+
+                <!-- Submission -->
+                <input id="sub" type="submit" value="Submit"> &nbsp;&nbsp;&nbsp;
+                <input id="sub" type="reset" value="Reset"><br><br>
+            </form>
+        </div>
+        <footer>Created By Surya</footer>
+</body>
+
+</html>
